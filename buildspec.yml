@@ -3,6 +3,8 @@ phases:
   install:
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket talal-khan-bucket --output-template-file outputSamTemplate.yaml
+      - pip install --upgrade awscli
+      - python -m unittest discover
 artifacts:
   type: zip
   files:
