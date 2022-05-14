@@ -4,9 +4,10 @@ def lambda_handler(event, context):
     # TODO implement 
     print(event)
     data = {
-        'output': 'Hello from '+ event['Country'],
+        'output': 'Hey from '+ event['Country'],
         'timestamp': datetime.datetime.utcnow().isoformat()
         # test
+        
     }
     return {'statusCode': 200,
             'body': json.dumps(data),
