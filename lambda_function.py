@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     data = {
         'output': 'Hello from '+ event['Country'],
         'timestamp': datetime.datetime.utcnow().isoformat()
-        # Hello World by Talal Khan
+        # Hello World
     }
     return {'statusCode': 200,
             'body': json.dumps(data),
