@@ -4,9 +4,9 @@ def lambda_handler(event, context):
     # TODO implement 
     print(event)
     data = {
-        'output': 'Hey from '+ event['Country'],
+        'output': 'Hello from '+ event['Country'],
         'timestamp': datetime.datetime.utcnow().isoformat()
-        # test
+        # My first pipeline
         
     }
     return {'statusCode': 200,
